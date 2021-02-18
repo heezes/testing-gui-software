@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>396</width>
-    <height>274</height>
+    <width>406</width>
+    <height>248</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -82,7 +82,7 @@
      <x>370</x>
      <y>10</y>
      <width>20</width>
-     <height>151</height>
+     <height>161</height>
     </rect>
    </property>
    <property name="orientation">
@@ -95,7 +95,7 @@
      <x>0</x>
      <y>10</y>
      <width>20</width>
-     <height>151</height>
+     <height>161</height>
     </rect>
    </property>
    <property name="orientation">
@@ -119,7 +119,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>150</y>
+     <y>160</y>
      <width>371</width>
      <height>20</height>
     </rect>
@@ -171,8 +171,8 @@
   <widget class="QPushButton" name="exit">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>100</y>
+     <x>220</x>
+     <y>140</y>
      <width>93</width>
      <height>21</height>
     </rect>
@@ -192,6 +192,16 @@
    </property>
    <property name="text">
     <string>Status</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_msg">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>90</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
    </property>
   </widget>
  </widget>

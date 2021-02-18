@@ -37,8 +37,8 @@ class mqtt_application():
         # self.mqtt_connected = True
         # Subscribing in on_connect() means that if we lose the connection and
         # reconnect then subscriptions will be renewed.
-        # client.subscribe(INFO_PUBLISH_TOPIC)#as the raspberry publishes on this topic
-        client.subscribe("random")#as the raspberry publishes on this topic
+        client.subscribe(INFO_PUBLISH_TOPIC)#as the raspberry publishes on this topic
+
 
     """
     @brief: Callback function when data is recieved on subscribed topic
@@ -119,6 +119,9 @@ class mqtt_application():
     def exitPressed(self):
         message = {}
         message['cmd'] = EXIT_OPCODE
+        input_msg = self.ui.input_msg.text()
+        if(len(input_msg) > 0):
+            message['msg'] = input_msg
         # message['arg'] = []
         # arguments = []
         # if self.ui.modeSelector.currentText().find("BLE"):
@@ -131,6 +134,7 @@ class mqtt_application():
         # for i in range(len(arguments)):
         #     message['arg'].append(arguments[i])
         self.sendInfo(json.dumps(message))
+        self.ui.input_msg.setText("")
 
     def syncPressed(self):
         message = {}
