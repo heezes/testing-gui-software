@@ -84,7 +84,7 @@ class mqtt_application():
         message['cmd'] = LOCK_OPCODE
         message['arg'] = []
         arguments = []
-        if self.ui.modeSelector.currentText().find("BLE"):
+        if self.ui.modeSelector.currentText().find("BLE") > -1:
             arguments.append(0)
         else:
             arguments.append(1)
