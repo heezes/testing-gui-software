@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="operation_status_img">
+    <file>C:/Users/Altamash/Downloads/fail.png</file>
+    <file>C:/Users/Altamash/Downloads/done.png</file>
+    <file>C:/Users/Altamash/Downloads/loading.png</file>
+  </qresource>
+</RCC>
